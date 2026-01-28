@@ -36,5 +36,8 @@ class Main{
 
         PaymentMethod ton = new CryptoPayment();
         service.processPayment(ton, 2000.0);
+
+        PaymentMethod cash = new CashPayment();
+        service.processPayment(cash, 1000.0);
     }
 }
